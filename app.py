@@ -42,7 +42,7 @@ from core.voice import (
 # ==================================================================
 
 st.set_page_config(
-    page_title="Agent Dojo",
+    page_title="Dojo-Local-Model-Studio",
     layout="wide",
     initial_sidebar_state="expanded",
 )
@@ -725,7 +725,7 @@ def persist():
 
 with st.sidebar:
     st.markdown(
-        '<div class="side-title">Agent Dojo</div>'
+        '<div class="side-title">Dojo-Local-Model-Studio</div>'
         '<div class="side-sub">Local model studio</div>',
         unsafe_allow_html=True,
     )
@@ -1172,7 +1172,7 @@ if mode == "Chat":
 
     # ---- Input ----
     pending = st.session_state.pop("pending_prompt", None)
-    typed = st.chat_input("Message Agent Dojo")
+    typed = st.chat_input("Message Dojo-Local-Model-Studio")
     prompt = pending or typed
 
     if prompt:
