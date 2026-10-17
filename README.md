@@ -1,4 +1,4 @@
-# Agent Dojo
+# Dojo-Local-Model-Studio
 
 A local-first model studio. Download GGUF models from Hugging Face, chat with them offline, and have full voice conversations with them. Everything runs on your machine. Nothing is sent to any server.
 
@@ -32,8 +32,9 @@ A local-first model studio. Download GGUF models from Hugging Face, chat with th
 Clone the repository and set up a virtual environment.
 
 ```bash
-git clone https://github.com/kirthivasantech-bit/agent-dojo.git
-cd agent-dojo
+git clone https://github.com/kirthivasantech-bit/Dojo-Local-Model-Studio
+cd Dojo-Local-Model-Studio
+
 
 python -m venv venv
 venv\Scripts\activate          # Windows
@@ -175,7 +176,7 @@ The **Session** menu at the top right of the Chat tab lets you edit the system p
 
 ## MCP server
 
-Agent Dojo exposes an MCP server so external AI tools can use your local models as tools.
+Dojo-Local-Model-Studio exposes an MCP server so external AI tools can use your local models as tools.
 
 Supported clients: Claude Desktop, Cursor, Windsurf, and any tool that speaks the Model Context Protocol.
 
@@ -226,7 +227,7 @@ Replace both paths with the actual locations. Restart Claude Desktop completely 
 
 Then in Claude, type:
 
-> List my local models using Agent Dojo.
+> List my local models using Dojo-Local-Model-Studio.
 
 Claude calls `list_models` and shows the result.
 
